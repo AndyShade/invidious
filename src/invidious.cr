@@ -41,6 +41,7 @@ PG_URL = URI.new(
   host: CONFIG.db.host,
   port: CONFIG.db.port,
   path: CONFIG.db.dbname,
+  query: "max_pool_size=40"
 )
 
 PG_DB           = DB.open PG_URL
